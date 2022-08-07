@@ -1,0 +1,234 @@
+/*Style for NavBar*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.subnav {
+    float: left;
+    overflow: hidden;
+}
+
+.subnav .subnavbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover,
+.subnav:hover .subnavbtn {
+    background-color: #05B8E3;
+}
+
+.subnav-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: #05B8E3;
+    width: 100%;
+    z-index: 1;
+}
+
+.subnav-content a {
+    float: left;
+    color: white;
+    text-decoration: none;
+}
+
+.subnav-content a:hover {
+    background-color: #eee;
+    color: black;
+}
+
+.subnav:hover .subnav-content {
+    display: block;
+}
+
+#login {
+    float: right;
+}
+
+#signup {
+    float: right;
+}
+
+
+/* Responsive navigation menu (for mobile devices) */
+
+@media screen and (max-width: 600px) {
+    .topnav a,
+    .topnav-right {
+        float: none;
+        display: block;
+    }
+    .topnav-centered a {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+    }
+}
+
+
+/*Style for NavBar*/
+
+
+/*Dark Mode*/
+
+.dark-mode {
+    background-color: #333;
+    color: white;
+}
+
+body {
+    margin: 0;
+    background-color: white;
+}
+
+.header {
+    background-color: #f1f1f1;
+    padding: 0px;
+    text-align: center;
+}
+
+.phone {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+}
+
+.price {
+    color: gray;
+    font-size: 20px;
+}
+
+nav {
+    float: left;
+    width: 30%;
+    height: 300px;
+    /* only for demonstration, should be removed */
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+article {
+    float: left;
+    padding: 20px;
+    width: 50%;
+    height: 300px;
+    /* only for demonstration, should be removed */
+}
+
+section:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+footer {
+    padding: 10px;
+    text-align: center;
+    color: black;
+}
+
+optgroup {
+    font-size: 14px;
+}
+
+.Accessibility_Title {
+    font-size: 24px;
+    font-style: bold;
+    color: black;
+}
+
+.Accessibility {
+    font-size: 24px;
+    font-style: bold;
+    color: black;
+}
+
+.SignupAndLogin_Head {
+    font-size: 24px;
+    font-style: bold;
+    color: black;
+}
+
+UnderLine {
+    border-bottom: 2px solid #005000;
+}
+
+SignupReqs {
+    font-size: 20px
+}
+
+.SignupReqs_Fields {
+    text-align: center;
+    font-size: 18px;
+    color: black;
+}
+
+about_Side {
+    color: red;
+    font-size: 20px;
+}
+
+about_Title {
+    color: black;
+    font-size: 55px;
+    text-decoration: underline;
+}
+
+about_Sub {
+    color: black;
+    font-size: 20px;
+}
+
+ItemTitle {
+    color: #8270EA;
+    font-size: 30px;
+}
+
+access {
+    font-size: 22px;
+}
+
+.ItemDes {
+    font-size: 16px;
+    color: black;
+}
+
+.cancelPurchase {
+    font-size: 20px;
+    color: black;
+}
+
+.ItemTable {
+    color: black;
+    font-size: 20px;
+}
