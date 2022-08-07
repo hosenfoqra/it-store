@@ -16,13 +16,19 @@ if(isset($_POST['submit'])){
             $usr_email2=$_POST['usr_email2'];
             $usr_pass1=$_POST['usr_pass1'];
             $usr_pass2=$_POST['usr_pass2'];
-
-            if($usr_pass1==$usr_pass2){
+            
+            $sql1 = "SELECT * FROM Users WHERE usr_email='$usr_email2';";
+            $result2 = mysqli_query($conn, $sql1);
+            $resultCheck2 = mysqli_num_rows($result2);
+            if ($resultCheck2 == 1) {
+                $err = 'Email already used';
+            } else if($usr_pass1==$usr_pass2){
                     $sql = " INSERT INTO Users (usr_name,usr_age,usr_email, usr_pass)
                     VALUES ('$usr_name','$usr_age','$usr_email2','$usr_pass1');";
 
                     if ($conn->query($sql) === TRUE) {
                         header('Location:login.php');
+                        
                     } 
                     else {
                         echo "Error: " . $sql . "<br>" . $conn->error;
@@ -32,5 +38,12 @@ if(isset($_POST['submit'])){
             else{
                 $err='Passwords does not mach';
             }
+
+                
+            
+
+
+
+            
     }
 }
