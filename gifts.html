@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+
+<?php
+        include("handlers/loginhandler.php");
+        
+        $usr_id = $_SESSION['usr_info'][0];
+        $usr_name = $_SESSION['usr_info'][1];
+        $usr_age = $_SESSION['usr_info'][2];
+        $usr_email = $_SESSION['usr_info'][3];
+        
+        
+        ?>
+    <div class="navbar">
+        <a href="vipuser.php">VIP Home</a>
+        <a href="vipoffers.html">VIP Offers</a>
+        <a href="gifts.html">Gifts</a>
+
+        <a>User name: <?php echo $usr_name ?></a>
+        <a>Email: <?php echo $usr_email ?></a>
+        <a href="login.php" style="margin-left: 570px">Log Out</a>
+
+    </div>
+
+
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            body {
+                background-color: black;
+                font-family: cursive;
+            }
+            
+            .glow {
+                font-size: 80px;
+                color: #fff;
+                text-align: center;
+                -webkit-animation: glow 1s ease-in-out infinite alternate;
+                -moz-animation: glow 1s ease-in-out infinite alternate;
+                animation: glow 1s ease-in-out infinite alternate;
+            }
+            
+            @-webkit-keyframes glow {
+                from {
+                    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+                }
+                to {
+                    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <h1 class="glow">COMING SOON</h1>
+
+    </body>
+
+</html>

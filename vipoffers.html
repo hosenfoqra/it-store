@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+
+<?php
+    include("handlers/loginhandler.php");
+    
+    $usr_id = $_SESSION['usr_info'][0];
+    $usr_name = $_SESSION['usr_info'][1];
+    $usr_age = $_SESSION['usr_info'][2];
+    $usr_email = $_SESSION['usr_info'][3];
+    
+    
+    ?>
+    <div class="navbar">
+        <a href="vipuser.php">VIP Home</a>
+        <a href="vipoffers.html">VIP Offers</a>
+        <a href="gifts.html">Gifts</a>
+
+        <a>User name: <?php echo $usr_name ?></a>
+        <a>Email: <?php echo $usr_email ?></a>
+        <a href="login.php" style="margin-left: 570px">Log Out</a>
+
+    </div>
+
+    <head>
+        <style>
+            body {
+                background-color: #92a8d1;
+            }
+            
+            .card {
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                max-width: 300px;
+                margin: auto;
+                text-align: center;
+                font-family: arial;
+            }
+            
+            .price {
+                color: grey;
+                font-size: 22px;
+            }
+            
+            .card button {
+                border: none;
+                outline: 0;
+                padding: 12px;
+                color: white;
+                background-color: #000;
+                text-align: center;
+                cursor: pointer;
+                width: 100%;
+                font-size: 18px;
+            }
+            
+            .card button:hover {
+                opacity: 0.7;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <h2 style="text-align:center">Vip offers</h2>
+
+
+
+
+        <table align="center">
+            <td>
+
+                <div class="card">
+                    <img src="pics/q1.jpg" alt="galaxy fold" style="width:100%">
+                    <h1>galaxy fold</h1>
+                    <p class="price">$1500</p>
+                    <p>512GB+12GB</p>
+                    <p><button>Add to Cart</button></p>
+                </div>
+            </td>
+
+            <td>
+                <td>
+                    <td>
+
+
+                        <td>
+                            <div class="card">
+                                <img src="pics/q2.jpg" alt="GALAXY Z" style="width:100%">
+                                <h1>galaxy Z </h1>
+                                <p class="price">$1200</p>
+                                <p>256GB+12gb</p>
+                                <p><button>Add to Cart</button></p>
+                            </div>
+                        </td>
+
+                        <td>
+                            <td>
+                                <td>
+
+
+                                    <td>
+                                        <div class="card">
+                                            <img src="pics/q3.png" alt="huawei P40 PRO PLUS" style="width:53%">
+                                            <h1>huawei p 40 pro </h1>
+                                            <p class="price">$1200</p>
+                                            <p>256GB+8GB</p>
+                                            <p><button>Add to Cart</button></p>
+                                        </div>
+                                    </td>
+        </table>
+
+
+
+        <table align="center">
+            <td>
+
+                <div class="card">
+                    <img src="pics/q1.jpg" alt="galaxy fold" style="width:100%">
+                    <h1>galaxy fold</h1>
+                    <p class="price">$1500</p>
+                    <p>512GB+12GB</p>
+                    <p><button>Add to Cart</button></p>
+                </div>
+            </td>
+
+            <td>
+                <td>
+                    <td>
+
+
+                        <td>
+                            <div class="card">
+                                <img src="pics/q2.jpg" alt="GALAXY Z" style="width:100%">
+                                <h1>galaxy Z </h1>
+                                <p class="price">$1200</p>
+                                <p>256GB+12gb</p>
+                                <p><button>Add to Cart</button></p>
+                            </div>
+                        </td>
+
+                        <td>
+                            <td>
+                                <td>
+
+
+                                    <td>
+                                        <div class="card">
+                                            <img src="pics/q3.png" alt="huawei P40 PRO PLUS" style="width:53%">
+                                            <h1>huawei p 40 pro </h1>
+                                            <p class="price">$1200</p>
+                                            <p>256GB+8GB</p>
+                                            <p><button>Add to Cart</button></p>
+                                        </div>
+                                    </td>
+        </table>
+
+
+
+
+
+
+    </body>
+
+</html>
